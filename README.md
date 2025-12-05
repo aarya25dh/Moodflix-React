@@ -74,28 +74,10 @@ Minimal stack, maximum impact. No bulky UI libraries. Just Tailwind + custom com
 - Chill → Animation, Feel-Good
 - Motivational → Biography, Sport
 
-## 🚀 Quick Start Guide
-
-1. Get API Key
-
-   - TMDB: Get Key
-
-2. Add Key to .env
-   ```text
-   VITE_TMDB_API_KEY=your_tmdb_key
-   ```
-3. Install & Run
-   ```
-   npm install --legacy-peer-deps
-   npm run dev
-   ```
-   Open : http://localhost:5173
-
 ## 🔗 Live Link
    ```
    https://aarya25dh.github.io/Moodflix-React/
    ```
-
 ## 🐛 Troubleshooting
 - Movies not loading → Check TMDB key + restart server
 
