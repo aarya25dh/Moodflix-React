@@ -86,10 +86,15 @@ Minimal stack, maximum impact. No bulky UI libraries. Just Tailwind + custom com
    ```
 3. Install & Run
    ```
-   npm install --legacy-peer-deps</br>
-   npm run dev</br>
+   npm install --legacy-peer-deps
+   npm run dev
    ```
    Open : http://localhost:5173
+
+## 🔗 Live Link
+   ```
+   https://aarya25dh.github.io/Moodflix-React/
+   ```
 
 ## 🐛 Troubleshooting
 - Movies not loading → Check TMDB key + restart server
