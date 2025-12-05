@@ -74,37 +74,6 @@ Minimal stack, maximum impact. No bulky UI libraries. Just Tailwind + custom com
 - Chill → Animation, Feel-Good
 - Motivational → Biography, Sport
 
-## 📂 Project Structure
-
-src/
-├── components/
-│ ├── Navbar.jsx
-│ ├── MovieCard.jsx
-│ ├── MoodCard.jsx
-│ ├── Loader.jsx
-│ └── EmptyState.jsx
-├── pages/
-│ ├── Landing.jsx
-│ ├── Moods.jsx
-│ ├── Results.jsx
-│ ├── Detail.jsx
-│ ├── Favorites.jsx
-│ └── Profile.jsx
-├── redux/
-│ ├── store.js
-│ └── favoritesSlice.js
-├── services/
-│ └── tmdb.js
-├── hooks/
-│ └── useAuth.js
-├── styles/
-│ └── index.css
-├── App.jsx
-└── main.jsx
-
-vbnet
-Copy code
-
 ## 🚀 Quick Start Guide
 
 1. Get API Key
@@ -114,41 +83,40 @@ Copy code
 2. Add Key to .env
    ```text
    VITE_TMDB_API_KEY=your_tmdb_key
-   Install & Run
    ```
+3. Install & Run
+   ```
+   npm install --legacy-peer-deps</br>
+   npm run dev</br>
+   ```
+   Open : http://localhost:5173
 
-bash
-Copy code
-npm install --legacy-peer-deps
-npm run dev
-Open http://localhost:5173
+## 🐛 Troubleshooting
+- Movies not loading → Check TMDB key + restart server
 
-🐛 Troubleshooting
-Movies not loading → Check TMDB key + restart server
+- Favorites not saving → Check browser localStorage
 
-Favorites not saving → Check browser localStorage
+- Build errors → rm -rf node_modules && npm install --legacy-peer-deps
 
-Build errors → rm -rf node_modules && npm install --legacy-peer-deps
+## 🎯 Future Enhancements
+- Optional Firebase auth for login
 
-🎯 Future Enhancements
-Optional Firebase auth for login
+- User reviews & ratings
 
-User reviews & ratings
+- Watchlist sharing
 
-Watchlist sharing
+- Advanced filtering (year, runtime, language)
 
-Advanced filtering (year, runtime, language)
+- Streaming provider info
 
-Streaming provider info
+- Social features (follow friends, see favorites)
 
-Social features (follow friends, see favorites)
-
-📝 License
+## 📝 License
 MIT License — free for personal/portfolio projects.
 
-🙏 Credits
+## 🙏 Credits
 TMDB API — The Movie Database
 
 Tailwind CSS — Styling framework
 
-Built with ❤️ | Ready to impress 🎬
+### Built with ❤️ | Ready to impress 🎬
