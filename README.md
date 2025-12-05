@@ -7,11 +7,8 @@ Moodflix isn’t another Netflix clone—it’s an emotion-first cinematic exper
 ## 🌙 Core Idea
 
 - Select a mood → discover movies → explore → save → repeat
-
 - Core moods: Happy, Sad, Romantic, Thriller, Chill, Motivational
-
 - Each mood maps to genres + filters, creating an emotion-first recommendation engine
-
 - Impresses recruiters with clean UX, API integration, state management, and responsiveness
 
 ## 🛠️ Tech Stack
@@ -28,160 +25,130 @@ Minimal stack, maximum impact. No bulky UI libraries. Just Tailwind + custom com
 ## 📄 Pages
 
 - Landing Page
-
 - Mood Selection Page
-
 - Movie Results Page
-
 - Movie Detail Page
-
 - Favorites Page
-
 - Profile Page
 
 ## 🎯 Key Features
 
 1. Mood-Based Discovery
 
-6 moods → mapped to TMDB genres
-
-Dynamic API queries per mood
-
-Error handling & loading states
+   - 6 moods → mapped to TMDB genres
+   - Dynamic API queries per mood
+   - Error handling & loading states
 
 2. Movie Data Integration
 
-TMDB API: popular, trending, top-rated, search
-
-Movie details: trailers, credits, ratings
-
-Poster & backdrop images from TMDB CDN
+   - TMDB API: popular, trending, top-rated, search
+   - Movie details: trailers, credits, ratings
+   - Poster & backdrop images from TMDB CDN
 
 3. Save Favorites
 
-Redux Toolkit + Redux Persist
-
-Favorites stored in local storage (no backend)
-
-Add/remove favorites
-
-Favorites count displayed in navbar & profile
+   - Redux Toolkit + Redux Persist
+   - Favorites stored in local storage (no backend)
+   - Add/remove favorites
+   - Favorites count displayed in navbar & profile
 
 4. Mobile-First Responsive Design
 
-320px → 4K screens
-
-Responsive grid layouts
-
-Touch-friendly buttons & spacing
-
-Hamburger menu on mobile
+   - 320px → 4K screens
+   - Responsive grid layouts
+   - Touch-friendly buttons & spacing
+   - Hamburger menu on mobile
 
 5. Dark Cinematic UI
-
-Brand color system: #0B0B0F, #14141C, #7C7CFF, #F472B6, #FBBF24, #EDEDED, #A1A1AA
-
-Soft gradients, minimal text
-
-Hover states & smooth transitions
-
-Emotional, immersive vibe
+   - Brand color system: #0B0B0F, #14141C, #7C7CFF, #F472B6, #FBBF24, #EDEDED, #A1A1AA
+   - Soft gradients, minimal text
+   - Hover states & smooth transitions
+   - Emotional, immersive vibe
 
 ## 🧠 Mood → Genre Mapping
 
-Happy → Comedy, Family
-Sad → Drama
-Romantic → Romance
-Thriller → Thriller, Crime
-Chill → Animation, Feel-Good
-Motivational→ Biography, Sport
+- Happy → Comedy, Family
+- Sad → Drama
+- Romantic → Romance
+- Thriller → Thriller, Crime
+- Chill → Animation, Feel-Good
+- Motivational → Biography, Sport
 
-📂 Project Structure
+## 📂 Project Structure
+
 src/
-├── components/  
-│ ├── Navbar.jsx  
-│ ├── MovieCard.jsx  
-│ ├── MoodCard.jsx  
-│ ├── Loader.jsx  
-│ └── EmptyState.jsx  
-├── pages/  
-│ ├── Landing.jsx  
-│ ├── Moods.jsx  
-│ ├── Results.jsx  
-│ ├── Detail.jsx  
-│ ├── Favorites.jsx  
-│ └── Profile.jsx  
-├── redux/  
-│ ├── store.js  
+├── components/
+│ ├── Navbar.jsx
+│ ├── MovieCard.jsx
+│ ├── MoodCard.jsx
+│ ├── Loader.jsx
+│ └── EmptyState.jsx
+├── pages/
+│ ├── Landing.jsx
+│ ├── Moods.jsx
+│ ├── Results.jsx
+│ ├── Detail.jsx
+│ ├── Favorites.jsx
+│ └── Profile.jsx
+├── redux/
+│ ├── store.js
 │ └── favoritesSlice.js
-├── services/  
-│ └── tmdb.js  
-├── hooks/  
-│ └── useAuth.js  
+├── services/
+│ └── tmdb.js
+├── hooks/
+│ └── useAuth.js
 ├── styles/
-│ └── index.css  
-├── App.jsx  
+│ └── index.css
+├── App.jsx
 └── main.jsx
+
+vbnet
+Copy code
 
 ## 🚀 Quick Start Guide
 
 1. Get API Key
 
-TMDB: Get Key
+   - TMDB: Get Key
 
 2. Add Key to .env
+   ```text
    VITE_TMDB_API_KEY=your_tmdb_key
+   Install & Run
+   ```
 
-3. Install & Run
-   npm install --legacy-peer-deps
-   npm run dev
+bash
+Copy code
+npm install --legacy-peer-deps
+npm run dev
+Open http://localhost:5173
 
-# Open http://localhost:5173
+🐛 Troubleshooting
+Movies not loading → Check TMDB key + restart server
 
-✨
+Favorites not saving → Check browser localStorage
 
-## 🐛 Troubleshooting
+Build errors → rm -rf node_modules && npm install --legacy-peer-deps
 
-- Movies not loading → Check TMDB key + restart server
+🎯 Future Enhancements
+Optional Firebase auth for login
 
-- Favorites not saving → Check browser localStorage
+User reviews & ratings
 
-- Build errors → rm -rf node_modules && npm install --legacy-peer-deps
+Watchlist sharing
 
-## 🎯 Additional Features
+Advanced filtering (year, runtime, language)
 
-- Mood-first UX: “Emotion-first design, not Netflix clone”
+Streaming provider info
 
-- API Integration: TMDB real data + error handling + pagination
+Social features (follow friends, see favorites)
 
-- State Management: Redux Toolkit + Redux Persist for offline favorites
-
-- Responsive Design: Mobile-first with 3 breakpoints
-
-- Design System: Strict color palette + cinematic UI
-
-## 🎯 Future Enhancements
-
-- Optional Firebase auth for login
-
-- User reviews & ratings
-
-- Watchlist sharing
-
-- Advanced filtering (year, runtime, language)
-
-- Streaming provider info
-
-- Social features (follow friends, see favorites)
-
-## 📝 License
-
+📝 License
 MIT License — free for personal/portfolio projects.
 
-## 🙏 Credits
-
+🙏 Credits
 TMDB API — The Movie Database
 
 Tailwind CSS — Styling framework
 
-## Built with ❤️ | Ready to impress 🎬
+Built with ❤️ | Ready to impress 🎬
